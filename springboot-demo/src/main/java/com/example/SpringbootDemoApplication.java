@@ -5,8 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+/*@EnableScheduling*/
 @EnableJpaRepositories(basePackages = "com.example.jpa.dao")
 @EnableElasticsearchRepositories(basePackages = "com.example.es.dao")
 public class SpringbootDemoApplication {
